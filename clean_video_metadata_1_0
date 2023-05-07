@@ -1,0 +1,252 @@
+::[FFmpeg clean_video_metadata_1_0 softy_plug]
+
+Setlocal enabledelayedexpansion
+
+mkdir out_stripped
+for %%f in ("*.mp4") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mp4")
+move *out.mp4 out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.mp4") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.avi") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.avi")
+move *out.avi out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.avi") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.mkv") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mkv")
+move *out.mkv out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.mkv") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.mov") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mov")
+move *out.mov out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.mov") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.wmv") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.wmv")
+wmve *out.wmv out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.wmv") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.flv") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.flv")
+flve *out.flv out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.flv") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.avchd") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.avchd")
+avchde *out.avchd out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.avchd") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.f4v") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.f4v")
+f4ve *out.f4v out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.f4v") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.swf") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.swf")
+swfe *out.swf out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.swf") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.mpv") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mpv")
+mpve *out.mpv out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.mpv") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.mpe") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mpe")
+mpee *out.mpe out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.mpe") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.mp2") do (ffmp2g -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mp2")
+mp2e *out.mp2 out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.mp2") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.mpeg") do (ffmpegg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mpeg")
+mpege *out.mpeg out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.mpeg") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.mpg") do (ffmpgg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mpg")
+mpge *out.mpg out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.mpg") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.3gp") do (ff3gpg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.3gp")
+3gpe *out.3gp out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.3gp") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.m4v") do (ffm4vg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.m4v")
+m4ve *out.m4v out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.m4v") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.qt") do (ffqtg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.qt")
+qte *out.qt out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.qt") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.mxf") do (ffmxfg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mxf")
+mxfe *out.mxf out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.mxf") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+for %%f in ("*.raw") do (ffrawg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.raw")
+rawe *out.raw out_stripped
+
+Set "Pattern=-out"
+Set "Replace="
+cd out_stripped
+for %%f in ("*.raw") do (
+
+Set "File=%%f"
+Ren "%%f" "!File:%Pattern%=%Replace%!"
+)
+
+::[FFmpeg clean_video_metadata_1_0 softy_plug]
+
+if NOT ["%errorlevel%"]==["0"] goto:error
+echo [92m%~n1 Done.[0m
+shift
+if "%~1" == "" goto:end
+goto:again
+:error
+
+echo [93mError! Video files to encode were not found. Check for video files in the folder with the executable .exe file.[0m
+pause
+exit 0
+:end
+
+cls
+echo [92mVideo metadata cleaned succesful. This window will close after 10 seconds.[0m
+timeout /t 10
+
+::[FFmpeg clean_video_metadata_1_0 softy_plug]
