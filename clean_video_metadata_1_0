@@ -52,7 +52,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.wmv") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.wmv")
-wmve *out.wmv out_stripped
+move *out.wmv out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -64,7 +64,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.flv") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.flv")
-flve *out.flv out_stripped
+move *out.flv out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -76,7 +76,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.avchd") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.avchd")
-avchde *out.avchd out_stripped
+move *out.avchd out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -88,7 +88,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.f4v") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.f4v")
-f4ve *out.f4v out_stripped
+move *out.f4v out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -100,7 +100,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.swf") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.swf")
-swfe *out.swf out_stripped
+move *out.swf out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -112,7 +112,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.mpv") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mpv")
-mpve *out.mpv out_stripped
+move *out.mpv out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -124,7 +124,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.mpe") do (ffmpeg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mpe")
-mpee *out.mpe out_stripped
+move *out.mpe out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -136,7 +136,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.mp2") do (ffmp2g -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mp2")
-mp2e *out.mp2 out_stripped
+move *out.mp2 out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -148,7 +148,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.mpeg") do (ffmpegg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mpeg")
-mpege *out.mpeg out_stripped
+move *out.mpeg out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -160,7 +160,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.mpg") do (ffmpgg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mpg")
-mpge *out.mpg out_stripped
+move *out.mpg out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -172,7 +172,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.3gp") do (ff3gpg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.3gp")
-3gpe *out.3gp out_stripped
+move *out.3gp out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -184,7 +184,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.m4v") do (ffm4vg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.m4v")
-m4ve *out.m4v out_stripped
+move *out.m4v out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -196,7 +196,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.qt") do (ffqtg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.qt")
-qte *out.qt out_stripped
+move *out.qt out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -208,7 +208,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.mxf") do (ffmxfg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.mxf")
-mxfe *out.mxf out_stripped
+move *out.mxf out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
@@ -220,7 +220,7 @@ Ren "%%f" "!File:%Pattern%=%Replace%!"
 )
 
 for %%f in ("*.raw") do (ffrawg -i "%%f" -map_metadata -1 -c:v copy -c:a copy -map 0:a -map 0:v "%%~nf-out.raw")
-rawe *out.raw out_stripped
+move *out.raw out_stripped
 
 Set "Pattern=-out"
 Set "Replace="
